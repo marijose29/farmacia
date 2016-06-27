@@ -7,5 +7,6 @@ namespace Farmacia.Data
 {
     public class Categoria
     {
+        public int IdCategoria { get; set; }
     }
 }
