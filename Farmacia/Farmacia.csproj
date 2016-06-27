@@ -60,6 +60,18 @@
       <DependentUpon>Activity.cs</DependentUpon>
     </Compile>
     <Compile Include="Gui\ActivityButton.cs" />
+    <Compile Include="Gui\ActivityGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ActivityGrid.Designer.cs">
+      <DependentUpon>ActivityGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gui\MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +89,9 @@
     <Compile Include="Utils\ActivityAttribute.cs" />
     <EmbeddedResource Include="Gui\Activity.resx">
       <DependentUpon>Activity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ActivityGrid.resx">
+      <DependentUpon>ActivityGrid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gui\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>

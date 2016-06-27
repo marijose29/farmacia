@@ -22,7 +22,7 @@ namespace Farmacia
             Type m_ActivityType = typeof(Activity);
             foreach(var type in assembly.GetTypes())
             {
-                if (m_ActivityType.IsAssignableFrom(type) && (m_ActivityType != type))
+                if (m_ActivityType.IsAssignableFrom(type) && (m_ActivityType != type) && (typeof(ActivityGrid) != type))
                 {
                     ActivityButton button = new ActivityButton(this, type);
                     m_Activities.Add(button);

@@ -5,14 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Farmacia.Utils;
 
 namespace Farmacia.Gui
 {
-    [Activity("Producto","pills-2.png")]
-    public partial class Producto : Farmacia.Gui.ActivityGrid
+    public partial class Cliente : Farmacia.Gui.ActivityGrid
     {
-        public Producto()
+        public Cliente()
         {
             InitializeComponent();
         }
