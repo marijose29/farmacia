@@ -16,6 +16,7 @@ namespace Farmacia
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainWindow());
+            //None
         }
     }
 }
