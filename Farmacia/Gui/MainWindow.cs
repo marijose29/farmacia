@@ -13,7 +13,6 @@ namespace Farmacia
 {
     public partial class MainWindow : Form
     {
-        private List<ActivityButton> m_Activities = new List<ActivityButton>();
         public MainWindow()
         {
             InitializeComponent();
@@ -22,30 +21,37 @@ namespace Farmacia
             Type m_ActivityType = typeof(Activity);
             foreach(var type in assembly.GetTypes())
             {
-                if (m_ActivityType.IsAssignableFrom(type) && (m_ActivityType != type) && (typeof(ActivityGrid) != type))
+                if (m_ActivityType.IsAssignableFrom(type) && (m_ActivityType != type))
                 {
                     ActivityButton button = new ActivityButton(this, type);
-                    m_Activities.Add(button);
-                    m_Actividad.Items.Add(button);
+                    ToolStripMenuItem item = new ToolStripMenuItem()
+                    {
+                        Image = button.Icon,
+                        Text = button.Title,
+                        Tag = button
+                    };
+                    item.Click += item_Click;
+                    menuToolStripMenuItem.DropDownItems.Insert(menuToolStripMenuItem.DropDownItems.Count -2, item);
                 }
             }
         }
 
-        private void m_Actividad_DrawItem(object sender, DrawItemEventArgs e)
+        void item_Click(object sender, EventArgs e)
         {
-            if (e.Index < 0) return;
-            e.DrawBackground();
-            e.DrawFocusRectangle();
-            ActivityButton button = m_Actividad.Items[e.Index] as ActivityButton;
-            Rectangle IconSurface = new Rectangle(e.Bounds.Location.X + 2,e.Bounds.Y + 2, 28, 28);
-            e.Graphics.DrawImage(button.Icon, IconSurface);
-            e.Graphics.DrawString(button.Title, m_Actividad.Font, new Pen(e.ForeColor).Brush,new PointF(IconSurface.Right,(IconSurface.Y + (e.Font.Height /4))));
+            ActivityButton button = (sender as ToolStripMenuItem).Tag as ActivityButton;
+            button.Activate();
         }
+
 
         private void m_Actividad_DoubleClick(object sender, EventArgs e)
         {
-            if (m_Actividad.SelectedItem != null)
-                (m_Actividad.SelectedItem as ActivityButton).Activate();
+         /*   if (m_Actividad.SelectedItem != null)
+                (m_Actividad.SelectedItem as ActivityButton).Activate();*/
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

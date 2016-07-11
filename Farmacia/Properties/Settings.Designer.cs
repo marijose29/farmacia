@@ -22,5 +22,15 @@ namespace Farmacia.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=Farmacia;Integrated Security=True")]
+        public string defaultConnection {
+            get {
+                return ((string)(this["defaultConnection"]));
+            }
+        }
     }
 }

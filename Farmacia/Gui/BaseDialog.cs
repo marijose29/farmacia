@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Farmacia.Gui
 {
-    public partial class Cliente : Farmacia.Gui.ActivityGrid
+    public partial class BaseDialog : Form
     {
-        public Cliente()
+        public BaseDialog()
         {
             InitializeComponent();
         }

@@ -10,11 +10,21 @@ using Farmacia.Utils;
 namespace Farmacia.Gui
 {
     [Activity("Producto","pills-2.png")]
-    public partial class Producto : Farmacia.Gui.ActivityGrid
+    public partial class Producto : Farmacia.Gui.Activity
     {
         public Producto()
         {
             InitializeComponent();
+        }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductoDialog dialog = new ProductoDialog();
+            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            { 
+                
+            }
+            dialog.Dispose();
         }
     }
 }

@@ -1097,4 +1097,5 @@ C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debu
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.Producto.resources
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Properties.Resources.resources
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.csproj.GenerateResource.Cache
-C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.ActivityGrid.resources
+C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.BaseDialog.resources
+C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.ProductoDialog.resources

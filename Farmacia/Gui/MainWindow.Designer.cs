@@ -28,99 +28,86 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.m_Actividad = new System.Windows.Forms.ListBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.m_SearchTextBox = new System.Windows.Forms.TextBox();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // menuStrip1
             // 
-            this.panel1.Controls.Add(this.m_Actividad);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(188, 574);
-            this.panel1.TabIndex = 0;
+            this.menuStrip1.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(984, 27);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // m_Actividad
+            // menuToolStripMenuItem
             // 
-            this.m_Actividad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.m_Actividad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_Actividad.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.m_Actividad.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_Actividad.FormattingEnabled = true;
-            this.m_Actividad.IntegralHeight = false;
-            this.m_Actividad.ItemHeight = 32;
-            this.m_Actividad.Location = new System.Drawing.Point(0, 47);
-            this.m_Actividad.Margin = new System.Windows.Forms.Padding(4);
-            this.m_Actividad.Name = "m_Actividad";
-            this.m_Actividad.Size = new System.Drawing.Size(188, 527);
-            this.m_Actividad.TabIndex = 1;
-            this.m_Actividad.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.m_Actividad_DrawItem);
-            this.m_Actividad.DoubleClick += new System.EventHandler(this.m_Actividad_DoubleClick);
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox1,
+            this.toolStripSeparator1,
+            this.toolStripSeparator2,
+            this.salirToolStripMenuItem});
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(58, 23);
+            this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
-            // panel2
+            // toolStripSeparator1
             // 
-            this.panel2.Controls.Add(this.m_SearchTextBox);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(10);
-            this.panel2.Size = new System.Drawing.Size(188, 47);
-            this.panel2.TabIndex = 0;
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(207, 6);
             // 
-            // m_SearchTextBox
+            // toolStripSeparator2
             // 
-            this.m_SearchTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_SearchTextBox.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_SearchTextBox.Location = new System.Drawing.Point(10, 10);
-            this.m_SearchTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.m_SearchTextBox.Name = "m_SearchTextBox";
-            this.m_SearchTextBox.Size = new System.Drawing.Size(168, 26);
-            this.m_SearchTextBox.TabIndex = 0;
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(207, 6);
             // 
-            // splitter1
+            // salirToolStripMenuItem
             // 
-            this.splitter1.Location = new System.Drawing.Point(188, 0);
-            this.splitter1.Margin = new System.Windows.Forms.Padding(4);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(4, 574);
-            this.splitter1.TabIndex = 2;
-            this.splitter1.TabStop = false;
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(150, 23);
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 574);
-            this.Controls.Add(this.splitter1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainWindow";
             this.Text = "Farmacia";
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Splitter splitter1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox m_SearchTextBox;
-        private System.Windows.Forms.ListBox m_Actividad;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
     }
 }
 
