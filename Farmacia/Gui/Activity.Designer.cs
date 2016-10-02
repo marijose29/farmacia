@@ -37,7 +37,6 @@
             this.ClientSize = new System.Drawing.Size(655, 433);
             this.Name = "Activity";
             this.Text = "Activity";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

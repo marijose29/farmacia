@@ -1091,7 +1091,6 @@ C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\bin\Debu
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\bin\Debug\Icon\zoom-out.png
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\bin\Debug\Farmacia.exe
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\bin\Debug\Farmacia.pdb
-C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\bin\Debug\Open.Data.dll
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.Activity.resources
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.MainWindow.resources
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.Producto.resources
@@ -1099,3 +1098,7 @@ C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debu
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.csproj.GenerateResource.Cache
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.BaseDialog.resources
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.ProductoDialog.resources
+C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\bin\Debug\Epn.Data.dll
+C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.Cliente.resources
+C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.csprojResolveAssemblyReference.cache
+C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.ClienteDialog.resources

@@ -35,11 +35,13 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Open.Data">
-      <HintPath>.\Open.Data.dll</HintPath>
+    <Reference Include="Epn.Data">
+      <HintPath>.\Epn.Data.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -49,7 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Cliente.cs" />
     <Compile Include="Data\Default.cs" />
+    <Compile Include="Data\Producto.cs" />
     <Compile Include="Gui\Activity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +66,18 @@
     </Compile>
     <Compile Include="Gui\BaseDialog.Designer.cs">
       <DependentUpon>BaseDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ClienteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ClienteDialog.Designer.cs">
+      <DependentUpon>ClienteDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Gui\MainWindow.cs">
       <SubType>Form</SubType>
@@ -89,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gui\BaseDialog.resx">
       <DependentUpon>BaseDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ClienteDialog.resx">
+      <DependentUpon>ClienteDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gui\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>

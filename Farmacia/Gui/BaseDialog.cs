@@ -16,5 +16,15 @@ namespace Farmacia.Gui
         {
             InitializeComponent();
         }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            if (OnValidate())
+                DialogResult = DialogResult.OK;
+        }
+        protected bool OnValidate()
+        {
+            return true;
+        }
     }
 }

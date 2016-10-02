@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BottomToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.RightToolStripPanel = new System.Windows.Forms.ToolStripPanel();
@@ -39,16 +40,18 @@
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtBuscar = new System.Windows.Forms.ToolStripTextBox();
+            this.dgvProducto = new System.Windows.Forms.DataGridView();
             this.colCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colIdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colIdCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colIdMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEspecificaciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).BeginInit();
             this.SuspendLayout();
             // 
             // BottomToolStripPanel
@@ -93,8 +96,8 @@
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.productoToolStripMenuItem,
-            this.toolStripTextBox1});
-            this.menuStrip1.Location = new System.Drawing.Point(9, 388);
+            this.txtBuscar});
+            this.menuStrip1.Location = new System.Drawing.Point(149, 308);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(228, 27);
             this.menuStrip1.TabIndex = 0;
@@ -114,82 +117,114 @@
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.editarToolStripMenuItem.Text = "Editar";
+            this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(114, 6);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
-            // toolStripTextBox1
+            // txtBuscar
             // 
-            this.toolStripTextBox1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(150, 23);
+            this.txtBuscar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(150, 23);
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
-            // dataGridView1
+            // dgvProducto
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvProducto.AllowUserToAddRows = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Beige;
+            this.dgvProducto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvProducto.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvProducto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProducto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colCategoria,
+            this.colIdProducto,
+            this.colIdCategoria,
+            this.colIdMarca,
             this.colMarca,
-            this.colNombre,
             this.colPrecio,
             this.colDescripcion,
             this.colEspecificaciones});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(660, 424);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvProducto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvProducto.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvProducto.Location = new System.Drawing.Point(0, 0);
+            this.dgvProducto.Name = "dgvProducto";
+            this.dgvProducto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProducto.Size = new System.Drawing.Size(660, 424);
+            this.dgvProducto.TabIndex = 1;
+            this.dgvProducto.VirtualMode = true;
+            this.dgvProducto.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dgvProducto_MouseUp);
             // 
             // colCategoria
             // 
+            this.colCategoria.DataPropertyName = "Categoria";
             this.colCategoria.HeaderText = "Categoria";
             this.colCategoria.Name = "colCategoria";
             // 
+            // colIdProducto
+            // 
+            this.colIdProducto.DataPropertyName = "IdProducto";
+            this.colIdProducto.HeaderText = "IdProducto";
+            this.colIdProducto.Name = "colIdProducto";
+            this.colIdProducto.Visible = false;
+            // 
+            // colIdCategoria
+            // 
+            this.colIdCategoria.DataPropertyName = "IdCategoria";
+            this.colIdCategoria.HeaderText = "IdCategoria";
+            this.colIdCategoria.Name = "colIdCategoria";
+            this.colIdCategoria.Visible = false;
+            // 
+            // colIdMarca
+            // 
+            this.colIdMarca.DataPropertyName = "IdMarca";
+            this.colIdMarca.HeaderText = "IdMarca";
+            this.colIdMarca.Name = "colIdMarca";
+            this.colIdMarca.Visible = false;
+            // 
             // colMarca
             // 
+            this.colMarca.DataPropertyName = "Marca";
             this.colMarca.HeaderText = "Marca";
             this.colMarca.Name = "colMarca";
             // 
-            // colNombre
-            // 
-            this.colNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colNombre.HeaderText = "Nombre";
-            this.colNombre.Name = "colNombre";
-            // 
             // colPrecio
             // 
+            this.colPrecio.DataPropertyName = "Precio";
             this.colPrecio.HeaderText = "Precio";
             this.colPrecio.Name = "colPrecio";
             // 
             // colDescripcion
             // 
             this.colDescripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colDescripcion.DataPropertyName = "Descripcion";
             this.colDescripcion.HeaderText = "Descripción";
             this.colDescripcion.Name = "colDescripcion";
             // 
             // colEspecificaciones
             // 
             this.colEspecificaciones.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colEspecificaciones.DataPropertyName = "Especificaciones";
             this.colEspecificaciones.HeaderText = "Especificaciones";
             this.colEspecificaciones.Name = "colEspecificaciones";
             // 
@@ -197,17 +232,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.ClientSize = new System.Drawing.Size(660, 424);
+            this.Controls.Add(this.dgvProducto);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Producto";
             this.Text = "Producto";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,11 +260,13 @@
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ToolStripTextBox txtBuscar;
+        private System.Windows.Forms.DataGridView dgvProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCategoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colIdProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colIdCategoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colIdMarca;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMarca;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrecio;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDescripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEspecificaciones;

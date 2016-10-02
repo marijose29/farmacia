@@ -43,7 +43,7 @@
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 171);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.panel1.Size = new System.Drawing.Size(535, 44);
@@ -51,7 +51,6 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnAceptar.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnAceptar.Location = new System.Drawing.Point(295, 7);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 15, 4);
@@ -60,12 +59,13 @@
             this.btnAceptar.TabIndex = 1;
             this.btnAceptar.Text = "&Guardar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(407, 7);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(8, 30);
             this.panel2.TabIndex = 2;
@@ -75,7 +75,7 @@
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnCancelar.Location = new System.Drawing.Point(415, 7);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(112, 30);
             this.btnCancelar.TabIndex = 0;
@@ -92,7 +92,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "BaseDialog";

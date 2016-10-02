@@ -5,29 +5,27 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using System.Dynamic;
-using Epn.Data;
 
 namespace Farmacia.Gui
 {
-    public partial class ProductoDialog : Farmacia.Gui.BaseDialog
+    public partial class ClienteDialog : Farmacia.Gui.BaseDialog
     {
-        private Data.Producto entity;
+        private Data.Cliente entity;
         //Constructor para uno nuevo
-        public ProductoDialog()
+        public ClienteDialog()
         {
             InitializeComponent();
-            entity = new Data.Producto();
-            entity.Categoria = "";
+            entity = new Data.Cliente();
+           /* entity.Categoria = "";
             entity.Marca = "";
             entity.Nombre = "";
             entity.Descripcion = "";
             entity.Especificaciones = "";
-            entity.Precio = 0.0m;
+            entity.Precio = 0.0m;*/
             Load();
         }
         //Constructor para editar
-        public ProductoDialog(Data.Producto record)
+        public ClienteDialog(Data.Cliente record)
         {
             InitializeComponent();
             entity = record;
@@ -36,7 +34,7 @@ namespace Farmacia.Gui
 
         private void Load()
         {
-            cmbCategoria.DataSource = Data.Default.Db.USPCATEGORIASELECCIONAR<RecordSet>().ToDataTable();
+            /*cmbCategoria.DataSource = Data.Default.Db.USPCATEGORIASELECCIONAR<RecordSet>().ToDataTable();
             cmbMarca.DataSource = Data.Default.Db.USPMARCASELECCIONAR<RecordSet>().ToDataTable();
             cmbCategoria.DisplayMember = "Nombre";
             cmbMarca.DisplayMember = "Nombre";
@@ -44,28 +42,24 @@ namespace Farmacia.Gui
             cmbMarca.Text = entity.Marca;
             txtNombre.Text = entity.Nombre;
             txtDescripcion.Text = entity.Descripcion;
-            txtEspecificaciones.Text = entity.Especificaciones;
+            txtEspecificaciones.Text = entity.Especificaciones;*/
         }
 
         public void Save()
         {
-            entity.Categoria = cmbCategoria.Text;
+            /*entity.Categoria = cmbCategoria.Text;
             entity.Marca = cmbMarca.Text;
             entity.Nombre = txtNombre.Text;
             entity.Descripcion = txtDescripcion.Text;
-            entity.Especificaciones = txtEspecificaciones.Text;
+            entity.Especificaciones = txtEspecificaciones.Text;*/
         }
 
-        public Data.Producto Record
+        public Data.Cliente Record
         {
             get {
                 return entity;
             }
         }
 
-        private void ProductoDialog_Validating(object sender, CancelEventArgs e)
-        {
-            e.Cancel = true;
-        }
     }
 }
