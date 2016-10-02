@@ -33,10 +33,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
+            this.txtCedula = new System.Windows.Forms.MaskedTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,10 +49,10 @@
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.maskedTextBox1, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.maskedTextBox2, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtNombre, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtDireccion, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtTelefono, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtCedula, 1, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -115,37 +115,37 @@
             this.label1.Text = "Nombre";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(100, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(264, 27);
-            this.textBox1.TabIndex = 2;
+            this.txtNombre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNombre.Location = new System.Drawing.Point(100, 3);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(264, 27);
+            this.txtNombre.TabIndex = 2;
             // 
-            // textBox2
+            // txtDireccion
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(100, 43);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(264, 27);
-            this.textBox2.TabIndex = 3;
+            this.txtDireccion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDireccion.Location = new System.Drawing.Point(100, 43);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(264, 27);
+            this.txtDireccion.TabIndex = 3;
             // 
-            // maskedTextBox1
+            // txtTelefono
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(100, 83);
-            this.maskedTextBox1.Mask = "0000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(134, 27);
-            this.maskedTextBox1.TabIndex = 12;
+            this.txtTelefono.Location = new System.Drawing.Point(100, 83);
+            this.txtTelefono.Mask = "0000-0000";
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(134, 27);
+            this.txtTelefono.TabIndex = 12;
             // 
-            // maskedTextBox2
+            // txtCedula
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(100, 123);
-            this.maskedTextBox2.Mask = "000-000000-0000A";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(134, 27);
-            this.maskedTextBox2.TabIndex = 13;
+            this.txtCedula.Location = new System.Drawing.Point(100, 123);
+            this.txtCedula.Mask = "000-000000-0000A";
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(134, 27);
+            this.txtCedula.TabIndex = 13;
             // 
             // ClienteDialog
             // 
@@ -164,13 +164,13 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox txtTelefono;
+        private System.Windows.Forms.MaskedTextBox txtCedula;
     }
 }

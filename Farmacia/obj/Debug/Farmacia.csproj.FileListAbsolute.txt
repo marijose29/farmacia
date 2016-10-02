@@ -1100,5 +1100,4 @@ C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debu
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.ProductoDialog.resources
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\bin\Debug\Epn.Data.dll
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.Cliente.resources
-C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.csprojResolveAssemblyReference.cache
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.ClienteDialog.resources

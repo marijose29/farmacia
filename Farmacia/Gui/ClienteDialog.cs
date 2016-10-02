@@ -16,12 +16,10 @@ namespace Farmacia.Gui
         {
             InitializeComponent();
             entity = new Data.Cliente();
-           /* entity.Categoria = "";
-            entity.Marca = "";
             entity.Nombre = "";
-            entity.Descripcion = "";
-            entity.Especificaciones = "";
-            entity.Precio = 0.0m;*/
+            entity.Direccion = "";
+            entity.NTelefono = "";
+            entity.NCedula = "";
             Load();
         }
         //Constructor para editar
@@ -34,24 +32,18 @@ namespace Farmacia.Gui
 
         private void Load()
         {
-            /*cmbCategoria.DataSource = Data.Default.Db.USPCATEGORIASELECCIONAR<RecordSet>().ToDataTable();
-            cmbMarca.DataSource = Data.Default.Db.USPMARCASELECCIONAR<RecordSet>().ToDataTable();
-            cmbCategoria.DisplayMember = "Nombre";
-            cmbMarca.DisplayMember = "Nombre";
-            cmbCategoria.Text = entity.Categoria;
-            cmbMarca.Text = entity.Marca;
             txtNombre.Text = entity.Nombre;
-            txtDescripcion.Text = entity.Descripcion;
-            txtEspecificaciones.Text = entity.Especificaciones;*/
+            txtDireccion.Text = entity.Direccion;
+            txtTelefono.Text = entity.NTelefono;
+            txtCedula.Text = entity.NCedula;
         }
 
         public void Save()
         {
-            /*entity.Categoria = cmbCategoria.Text;
-            entity.Marca = cmbMarca.Text;
             entity.Nombre = txtNombre.Text;
-            entity.Descripcion = txtDescripcion.Text;
-            entity.Especificaciones = txtEspecificaciones.Text;*/
+            entity.Direccion = txtDireccion.Text;
+            entity.NCedula = txtCedula.Text;
+            entity.NTelefono = txtTelefono.Text;
         }
 
         public Data.Cliente Record

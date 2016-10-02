@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BottomToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.RightToolStripPanel = new System.Windows.Forms.ToolStripPanel();
@@ -151,8 +151,8 @@
             // dgvProducto
             // 
             this.dgvProducto.AllowUserToAddRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Beige;
-            this.dgvProducto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Beige;
+            this.dgvProducto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvProducto.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvProducto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -170,7 +170,7 @@
             this.dgvProducto.Location = new System.Drawing.Point(0, 0);
             this.dgvProducto.Name = "dgvProducto";
             this.dgvProducto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProducto.Size = new System.Drawing.Size(660, 424);
+            this.dgvProducto.Size = new System.Drawing.Size(845, 424);
             this.dgvProducto.TabIndex = 1;
             this.dgvProducto.VirtualMode = true;
             this.dgvProducto.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dgvProducto_MouseUp);
@@ -231,7 +231,7 @@
             // Producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
-            this.ClientSize = new System.Drawing.Size(660, 424);
+            this.ClientSize = new System.Drawing.Size(845, 424);
             this.Controls.Add(this.dgvProducto);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
