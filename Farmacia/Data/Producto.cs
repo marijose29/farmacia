@@ -15,5 +15,10 @@ namespace Farmacia.Data
         public decimal Precio { get; set; }
         public string Especificaciones { get; set; }
         public string Descripcion { get; set; }
+
+        public static Producto Get(int IdProducto)
+        {
+            return Data.Default.Db.USPPRODUCTOSELECCIONAR<Producto>(IdProducto: IdProducto);
+        }
     }
 }

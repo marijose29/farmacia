@@ -54,6 +54,11 @@
     <Compile Include="Data\Cliente.cs" />
     <Compile Include="Data\Compra.cs" />
     <Compile Include="Data\Default.cs" />
+    <Compile Include="Data\DetalleCompra.cs" />
+    <Compile Include="Data\DetalleVenta.cs" />
+    <Compile Include="Data\Lote.cs" />
+    <Compile Include="Data\LoteCompra.cs" />
+    <Compile Include="Data\LoteVenta.cs" />
     <Compile Include="Data\Producto.cs" />
     <Compile Include="Data\Proveedor.cs" />
     <Compile Include="Gui\Activity.cs">
@@ -163,6 +168,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Epn.Data.dll" />
     <Content Include="Icon\add-1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
