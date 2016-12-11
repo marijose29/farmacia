@@ -1104,3 +1104,6 @@ C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debu
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.csprojResolveAssemblyReference.cache
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.ProveedorDialog.resources
 C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.Proveedor.resources
+C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.Compra.resources
+C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.CompraDialog.resources
+C:\Users\gmg\Documents\Visual Studio 2013\Projects\FarmaciaGit\Farmacia\obj\Debug\Farmacia.Gui.ProductoLote.resources
