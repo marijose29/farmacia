@@ -19,8 +19,6 @@ namespace Farmacia.Data
         public decimal Precio { get; set; }
         public decimal Existencia { get; set; }
 
-        public Producto Producto { get; set; }
-       
         public static Lote Get(int IdLote) {
             return Data.Default.Db.USPLOTESELECCIONAR<Record, Lote>(IdLote: IdLote);
         }
@@ -28,6 +26,7 @@ namespace Farmacia.Data
         public static BindingList<Lote> Get() {
             return new BindingList<Lote>(Data.Default.Db.USPLOTESELECCIONAR<RecordSet, Lote>());
         }
+
         public void Insert() {
             IdLote = Data.Default.Db.USPLOTEINSERTAR<int>(Record.FromInstance(this));
         }
@@ -39,9 +38,6 @@ namespace Farmacia.Data
         public void Update() {
             Data.Default.Db.USPLOTEACTUALIZAR(Record.FromInstance(this));
         }
-
-        public void Complete() {
-            Producto = Producto.Get(IdProducto);
-        }
+        
     }
 }

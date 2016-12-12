@@ -31,27 +31,28 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dgvProducto = new System.Windows.Forms.DataGridView();
+            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCantidad2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSubtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colIdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvDetalle = new System.Windows.Forms.DataGridView();
             this.colNumero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFechaCaducidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPrecio2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSubtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCantidad2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvProducto = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -77,8 +78,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
-            this.splitContainer1.Size = new System.Drawing.Size(594, 322);
-            this.splitContainer1.SplitterDistance = 172;
+            this.splitContainer1.Size = new System.Drawing.Size(808, 509);
+            this.splitContainer1.SplitterDistance = 271;
             this.splitContainer1.TabIndex = 2;
             // 
             // groupBox1
@@ -88,39 +89,101 @@
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.groupBox1.Size = new System.Drawing.Size(594, 172);
+            this.groupBox1.Size = new System.Drawing.Size(808, 271);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Producto";
             // 
+            // dgvProducto
+            // 
+            this.dgvProducto.AllowUserToAddRows = false;
+            this.dgvProducto.AllowUserToDeleteRows = false;
+            this.dgvProducto.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvProducto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProducto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colNombre,
+            this.colCantidad2,
+            this.colPrecio,
+            this.colSubtotal,
+            this.colDescripcion,
+            this.colIdProducto});
+            this.dgvProducto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvProducto.Location = new System.Drawing.Point(5, 25);
+            this.dgvProducto.Name = "dgvProducto";
+            this.dgvProducto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProducto.Size = new System.Drawing.Size(798, 241);
+            this.dgvProducto.TabIndex = 0;
+            this.dgvProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvProducto.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducto_RowEnter);
+            // 
+            // colNombre
+            // 
+            this.colNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colNombre.DataPropertyName = "Nombre";
+            this.colNombre.HeaderText = "Nombre";
+            this.colNombre.Name = "colNombre";
+            // 
+            // colCantidad2
+            // 
+            this.colCantidad2.DataPropertyName = "Cantidad";
+            this.colCantidad2.HeaderText = "Cantidad";
+            this.colCantidad2.Name = "colCantidad2";
+            // 
+            // colPrecio
+            // 
+            this.colPrecio.DataPropertyName = "Precio";
+            this.colPrecio.HeaderText = "Precio";
+            this.colPrecio.Name = "colPrecio";
+            // 
+            // colSubtotal
+            // 
+            this.colSubtotal.DataPropertyName = "Subtotal";
+            this.colSubtotal.HeaderText = "Subtotal";
+            this.colSubtotal.Name = "colSubtotal";
+            // 
+            // colDescripcion
+            // 
+            this.colDescripcion.DataPropertyName = "IdProducto";
+            this.colDescripcion.HeaderText = "-";
+            this.colDescripcion.Name = "colDescripcion";
+            this.colDescripcion.Visible = false;
+            // 
+            // colIdProducto
+            // 
+            this.colIdProducto.DataPropertyName = "Descripcion";
+            this.colIdProducto.HeaderText = "-";
+            this.colIdProducto.Name = "colIdProducto";
+            this.colIdProducto.Visible = false;
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView2);
+            this.groupBox2.Controls.Add(this.dgvDetalle);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(5);
-            this.groupBox2.Size = new System.Drawing.Size(594, 146);
+            this.groupBox2.Size = new System.Drawing.Size(808, 234);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Lotes";
             // 
-            // dataGridView2
+            // dgvDetalle
             // 
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvDetalle.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvDetalle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colNumero,
             this.colFecha,
             this.colFechaCaducidad,
             this.colCantidad,
             this.colPrecio2});
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(5, 25);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(584, 116);
-            this.dataGridView2.TabIndex = 1;
+            this.dgvDetalle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDetalle.Location = new System.Drawing.Point(5, 25);
+            this.dgvDetalle.Name = "dgvDetalle";
+            this.dgvDetalle.Size = new System.Drawing.Size(798, 204);
+            this.dgvDetalle.TabIndex = 1;
             // 
             // colNumero
             // 
@@ -153,60 +216,15 @@
             this.colPrecio2.HeaderText = "Precio";
             this.colPrecio2.Name = "colPrecio2";
             // 
-            // colSubtotal
-            // 
-            this.colSubtotal.HeaderText = "Subtotal";
-            this.colSubtotal.Name = "colSubtotal";
-            // 
-            // colPrecio
-            // 
-            this.colPrecio.HeaderText = "Precio";
-            this.colPrecio.Name = "colPrecio";
-            // 
-            // colCantidad2
-            // 
-            this.colCantidad2.HeaderText = "Cantidad";
-            this.colCantidad2.Name = "colCantidad2";
-            // 
-            // colNombre
-            // 
-            this.colNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colNombre.HeaderText = "Nombre";
-            this.colNombre.Name = "colNombre";
-            // 
-            // colCodigo
-            // 
-            this.colCodigo.HeaderText = "Codigo";
-            this.colCodigo.Name = "colCodigo";
-            // 
-            // dgvProducto
-            // 
-            this.dgvProducto.AllowUserToAddRows = false;
-            this.dgvProducto.AllowUserToDeleteRows = false;
-            this.dgvProducto.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgvProducto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProducto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colCodigo,
-            this.colNombre,
-            this.colCantidad2,
-            this.colPrecio,
-            this.colSubtotal});
-            this.dgvProducto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvProducto.Location = new System.Drawing.Point(5, 25);
-            this.dgvProducto.Name = "dgvProducto";
-            this.dgvProducto.Size = new System.Drawing.Size(584, 142);
-            this.dgvProducto.TabIndex = 0;
-            this.dgvProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
             // ProductoLote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
-            this.ClientSize = new System.Drawing.Size(614, 421);
+            this.ClientSize = new System.Drawing.Size(828, 608);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.splitContainer1);
             this.Name = "ProductoLote";
             this.Text = "Lotes";
+            this.Load += new System.EventHandler(this.ProductoLote_Load);
             this.Controls.SetChildIndex(this.splitContainer1, 0);
             this.Controls.SetChildIndex(this.textBox1, 0);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -214,9 +232,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,17 +246,18 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvDetalle;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNumero;
         private System.Windows.Forms.DataGridViewTextBoxColumn colFecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn colFechaCaducidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrecio2;
         private System.Windows.Forms.DataGridView dgvProducto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCantidad2;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrecio;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSubtotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDescripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colIdProducto;
     }
 }

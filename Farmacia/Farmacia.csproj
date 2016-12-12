@@ -55,7 +55,6 @@
     <Compile Include="Data\Compra.cs" />
     <Compile Include="Data\Default.cs" />
     <Compile Include="Data\DetalleCompra.cs" />
-    <Compile Include="Data\DetalleLote.cs" />
     <Compile Include="Data\DetalleVenta.cs" />
     <Compile Include="Data\Lote.cs" />
     <Compile Include="Data\LoteCompra.cs" />

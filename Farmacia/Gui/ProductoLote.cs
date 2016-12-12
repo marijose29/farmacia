@@ -19,5 +19,18 @@ namespace Farmacia.Gui
         {
 
         }
+
+        private void ProductoLote_Load(object sender, EventArgs e)
+        {
+            dgvProducto.DataSource = Data.ProductoLote.Get();
+        }
+
+        private void dgvProducto_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) {
+                Data.ProductoLote plote = ((BindingList<Data.ProductoLote>) dgvProducto.DataSource)[e.RowIndex];
+                dgvDetalle.DataSource = plote.Detalle;
+            }
+        }
     }
 }

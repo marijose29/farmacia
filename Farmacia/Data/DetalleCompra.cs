@@ -15,7 +15,6 @@ namespace Farmacia.Data
         public decimal Cantidad { get; set; }
         public decimal Importe { get; set; }
         public bool AplicaIVA { get; set; }
-        public decimal Rentencion { get; set; }
         public decimal Descuento { get; set; }
         public decimal Total { get; set; }
     }
